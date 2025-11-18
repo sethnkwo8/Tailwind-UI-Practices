@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../../output.css">
+</head>
+
+<body class="text-lg">
+    <header>
+        <nav class="flex justify-around items-center bg-blue-300 py-7">
+            <div>
+                <p class="text-2xl font-bold">MyBrand</p>
+            </div>
+            <div class="md:hidden">
+                <el-dropdown class="inline-block">
+                    <button
+                        class="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm font-semibold text-black inset-ring-1 inset-ring-white/5 hover:bg-indigo-900">
+                        <ion-icon class="text-3xl" name="menu-outline"></ion-icon>
+                    </button>
+
+                    <el-menu anchor="bottom end" popover
+                        class="w-56 origin-top-right divide-y divide-white/10 rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Home</a>
+                        </div>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">About</a>
+                        </div>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Contact</a>
+                        </div>
+                        <div class="py-1">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Services</a>
+                        </div>
+                    </el-menu>
+                </el-dropdown>
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex gap-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="hidden md:block">
+                <a class="bg-indigo-500 hover:bg-indigo-900 px-8 py-4 rounded-lg" href="#">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

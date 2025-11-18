@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../output.css">
+</head>
+
+<body class="dark:bg-gray-800 dark:text-white">
+    <header class="w-full">
+        <div class="hidden w-64 h-screen bg-gray-900 text-white top-16 left-0 fixed md:flex flex-col gap-6 pt-8 px-6">
+            <div class="text-3xl">
+                MyDashboard
+            </div>
+            <div class="py-6">
+                <ul class="flex flex-col gap-3 text-xl">
+                    <li><a class="hover:bg-gray-600 p-1" href="#">Dashboard</a></li>
+                    <li><a class="hover:bg-gray-600 p-1" href="#">Analytics</a></li>
+                    <li><a class="hover:bg-gray-600 p-1" href="#">Users</a></li>
+                    <li><a class="hover:bg-gray-600 p-1" href="#">Settings</a></li>
+                    <li><a class="hover:bg-gray-600 p-1" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav
+            class="w-full flex items-center justify-between h-16 shadow-sm sticky top-0 bg-white dark:text-black px-6 md:px-12">
+            <div class="px-12">
+                <p class="text-2xl font-bold">MyBrand</p>
+            </div>
+            <div class="flex items-center gap-4 ">
+                <div class="flex gap-2 items-center">
+                    <a class="text-5xl" href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <p class="text-3xl">SethNkwo</p>
+                </div>
+                <div>
+                    <ion-icon class="text-3xl" name="notifications-outline"></ion-icon>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="md:ml-64 py-24 px-12">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+            <div class="bg-white dark:text-black shadow-lg rounded-lg p-6 text-center">
+                <ion-icon class="text-4xl" name="people-outline"></ion-icon>
+                <div class="font-bold text-4xl py-2">
+                    1,240
+                </div>
+                <div class="py-2 text-2xl">
+                    Total Users
+                </div>
+            </div>
+            <div class="bg-white dark:text-black shadow-lg rounded-lg p-6 text-center">
+                <ion-icon class="text-4xl" name="person-add-outline"></ion-icon>
+                <div class="font-bold text-4xl py-2">
+                    600
+                </div>
+                <div class="py-2 text-2xl">
+                    New Signups
+                </div>
+            </div>
+            <div class="bg-white dark:text-black shadow-lg rounded-lg p-6 text-center w-full">
+                <ion-icon class="text-4xl" name="wallet-outline"></ion-icon>
+                <div class="font-bold text-4xl py-2">
+                    $10,000
+                </div>
+                <div class="py-2 text-2xl">
+                    Revenue
+                </div>
+            </div>
+        </section>
+        <section class="p-8 dark:text-black">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 w-full">
+                <div class="bg-white h-64 rounded-lg shadow-lg text-center p-4 text-2xl">
+                    Traffic Chart
+                </div>
+                <div class="bg-white h-64 rounded-lg shadow-lg text-center p-4 text-2xl">
+                    Sales Chart
+                </div>
+            </div>
+        </section>
+        <section class="w-full flex flex-col justify-center">
+            <h1 class="text-center text-4xl mb-8">
+                Recent Users
+            </h1>
+            <table
+                class="table-auto text-center min-w-full text-xl overflow-x-auto border border-gray-400 rounded-lg shadow-lg border-collapse">
+                <thead>
+                    <tr>
+                        <th class="p-6">Name</th>
+                        <th class="p-6">Email</th>
+                        <th class="p-6">Status</th>
+                        <th class="p-6">Joined</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hover:bg-gray-100 hover:text-black transition">
+                        <td class="p-6">Seth Nkwo</td>
+                        <td class="p-6">sethnkwo@yahoo.com</td>
+                        <td class="p-6">Active</td>
+                        <td class="p-6">17/11/2025</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 hover:text-black transition">
+                        <td class="p-6">Bruno Fernandes</td>
+                        <td class="p-6">bruno8@gmail.com</td>
+                        <td class="p-6">Active</td>
+                        <td class="p-6">12/11/2025</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 hover:text-black transition">
+                        <td class="p-6">Cristiano Ronaldo</td>
+                        <td class="p-6">CR7@siuu.com</td>
+                        <td class="p-6">Active</td>
+                        <td class="p-6">25/10/2025</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 hover:text-black transition">
+                        <td class="p-6">Kevin Durant</td>
+                        <td class="p-6">Trey5@houston.com</td>
+                        <td class="p-6">Active</td>
+                        <td class="p-6">05/02/2025</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100 hover:text-black transition">
+                        <td class="p-6">Kai Cenat</td>
+                        <td class="p-6">KC3000@yurrr.com</td>
+                        <td class="p-6">Active</td>
+                        <td class="p-6">01/01/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="  md:ml-64 text-center py-10 w-full">
+        &copy; 2025 MyDashboard
+    </footer>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
