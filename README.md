@@ -74,6 +74,7 @@ You can add your custom classes in input.css using Tailwind’s utility system, 
 ## 🖥 Full UIs Included
 - Landing Page  
 - Dashboard UI  
+- Authentication Pack Pages (Login Page, Sign Up Page, Forgot Password Page)
 
 ## 📌 Purpose
 - Improve Tailwind CSS fundamentals  
