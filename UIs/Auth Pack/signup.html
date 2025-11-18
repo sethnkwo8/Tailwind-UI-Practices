@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../../output.css">
+</head>
+
+<body class="min-h-screen flex flex-col items-center bg-gray-400">
+    <h1 class="font-bold text-3xl md:text-4xl p-6">MyBrand</h1>
+    <section class="w-full flex justify-center px-4 text-2xl">
+        <div class="bg-white p-6 pb-10 w-full md:w-1/2 mt-20 shadow-md rounded-lg flex flex-col items-center">
+            <h3 class="text-4xl p-4">Create an Account</h3>
+            <form class="w-full flex flex-col items-center p-6 gap-8" action="#">
+                <div class="w-full">
+                    <label for="full_name">Full Name:</label>
+                    <input
+                        class="w-full mt-2 border focus:outline-0 focus:border-blue-400 border-gray-400 rounded-lg p-2"
+                        id="full_name" type="text">
+                </div>
+                <div class="w-full">
+                    <label for="email">Email Address:</label>
+                    <input
+                        class="w-full mt-2 border focus:outline-0 focus:border-blue-400 border-gray-400 rounded-lg p-2"
+                        id="email" type="email">
+                </div>
+                <div class="w-full">
+                    <label for="password">Password:</label>
+                    <div class="relative">
+                        <input
+                            class="w-full mt-2 border focus:outline-0 focus:border-blue-400 border-gray-400 rounded-lg p-2"
+                            id="password" type="password">
+                        <ion-icon class="absolute top-5 right-3" name="eye"></ion-icon>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <div class="relative">
+                        <input
+                            class="w-full mt-2 border focus:outline-0 focus:border-blue-400 border-gray-400 rounded-lg p-2"
+                            id="confirm_password" type="password">
+                        <ion-icon class="absolute top-5 right-3" name="eye"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <button
+                        class="w-full font-bold rounded-lg text-white bg-blue-400 transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-105 px-8 py-4">Sign
+                        Up</button>
+                </div>
+                <div>
+                    Already have an account? <span class="hover:text-blue-600 hover:underline">Login</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
