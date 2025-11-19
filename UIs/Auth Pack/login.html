@@ -8,36 +8,33 @@
     <link rel="stylesheet" href="../../output.css">
 </head>
 
-<body class="bg-gray-300 min-h-screen flex flex-col items-center">
-    <h1 class="font-bold text-6xl py-8">MyBrand</h1>
-    <section class="w-full flex justify-center px-4">
-        <div
-            class="mx-auto mt-32 bg-white shadow-lg rounded-xl w-full md:w-1/2 p-8 flex flex-col items-center gap-6 text-xl">
-            <h3 class="text-3xl">Welcome Back</h3>
-            <div class="flex flex-col items-center gap-6">
-                <form class="w-full px-6" action="#">
-                    <div class="mb-8">
-                        <label for="email">Email:</label>
-                        <input class="w-full mt-2 p-2 border rounded-lg border-gray-500" id="email" type="email">
-                    </div>
-                    <div class="mb-8">
-                        <label for="password">Password:</label>
-                        <div class="relative">
-                            <input class="w-full mt-2 p-2 border rounded-lg border-gray-500" id="password"
-                                type="password">
-                            <ion-icon class="absolute top-4 right-3 text-2xl" name="eye-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <button
-                        class="w-full px-8 py-4 bg-blue-400 transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-105 hover:-translate-y-1.5 rounded-lg text-white">Login</button>
-                </form>
-                <ul>
-                    <li><a class="hover:text-blue-600" href="#">Forgot Password?</a></li>
-                </ul>
-                <p>Don't have an account? <a class="hover:text-blue-600" href="#">Sign up</a></p>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <div class="flex flex-col mb-4 w-full md:max-w-md bg-white p-8 gap-2 items-center rounded-lg shadow-lg">
+        <ion-icon class="text-4xl text-blue-500" name="log-in-outline"></ion-icon>
+        <h3 class="text-3xl md:text-4xl font-bold">Welcome Back</h3>
+        <form class="w-full flex flex-col p-6 space-y-6 items-center" action="#">
+            <div class="w-full">
+                <label class="block mb-1 font-medium" for="email">Email</label>
+                <input
+                    class="w-full border p-2 bg-white text-gray-700 border-gray-300 rounded-lg focus:ring-blue-500 outline-0"
+                    id="email" type="email">
             </div>
-        </div>
-    </section>
+            <div class="w-full">
+                <label class="block mb-1 font-medium" for="password">Password</label>
+                <div class="relative">
+                    <input
+                        class="w-full border p-2 bg-white text-gray-700 border-gray-300 rounded-lg focus:ring-blue-500 outline-0"
+                        id="password" type="password">
+                    <ion-icon class="absolute top-3 right-3" name="eye"></ion-icon>
+                </div>
+            </div>
+            <button
+                class="w-full font-semibold text-white bg-blue-600 rounded-lg px-8 py-4 transition duration-300 ease-in-out hover:bg-blue-700 hover:scale-105">Login
+            </button>
+        </form>
+        <a class="hover:text-blue-400 hover:underline" href="#">Forgot Password?</a>
+        <p>Don't have an account? <a class="hover:text-blue-400 hover:underline" href="#">Sign up</a></p>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
