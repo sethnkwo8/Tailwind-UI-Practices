@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @utility features-card {
-  @apply shadow-md w-full md:w-64 lg:w-72 p-8 rounded-lg flex flex-col;
+  @apply bg-white shadow-md hover:shadow-xl w-full md:w-64 lg:w-72 p-8 rounded-lg flex flex-col hover:scale-105 transition duration-300 ease-in-out;
 }
 
 @utility pricing-card {
@@ -13,7 +13,7 @@
 }
 
 @utility bottom-half {
-  @apply text-left pt-4 px-4 flex flex-col;
+  @apply text-left text-black pt-4 px-4 flex flex-col;
 }
 
 @utility stats-card {
